@@ -1,0 +1,67 @@
+[
+    {
+        "post_id": 1,
+        "user_id":2,
+        "content": "Nice, this is really insightful!"
+    },
+    {
+        "post_id": 1,
+        "user_id":3,
+        "content": "Wow really interesting, can't wait to use this in my code!"
+    },
+    {
+        "post_id": 2,
+        "user_id":4,
+        "content": "Could you write a follow up blogpost explaing more about this?"
+    },
+    {
+        "post_id": 2,
+        "user_id":5,
+        "content": "Nicely written. Good job!"
+    },
+    {
+        "post_id": 3,
+        "user_id":1,
+        "content": "Very interesting!!!"
+    },
+    {
+        "post_id": 3,
+        "user_id":3,
+        "content": "Wow I never knew about this"
+    },
+    {
+        "post_id": 4,
+        "user_id":2,
+        "content": "Great job!"
+    },
+    {
+        "post_id": 4,
+        "user_id":5,
+        "content": "Really interesting!"
+    },
+    {
+        "post_id": 5,
+        "user_id":2,
+        "content": "Could you link the repository for this project?"
+    },
+    {
+        "post_id": 5,
+        "user_id":1,
+        "content": "Very interesting"
+    },
+    {
+        "post_id": 6,
+        "user_id":3,
+        "content": "Impressive stuff you got here!"
+    },
+    {
+        "post_id": 6,
+        "user_id":1,
+        "content": "I can't wait to use this!"
+    },
+    {
+        "post_id": 7,
+        "user_id":4,
+        "content": "Nice, very well written!"
+    }
+]
