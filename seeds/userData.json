@@ -1,0 +1,33 @@
+[
+    {
+        "name": "Juju",
+        "email": "jujub@techblog.com",
+        "password": "juju123"
+    },
+    {
+        "name": "Josh",
+        "email": "joshn@techblog.com",
+        "password": "josh321"
+    },
+    {
+        "name": "Arya",
+        "email": "aryastark@techblog.com",
+        "password": "aryastark1",
+    },
+    {
+        "name": "Sansa",
+        "email": "sansastark@techblog.com",
+        "password": "sansastark2"
+    },
+    {
+        "name": "Jon",
+        "email": "jonsnow@techblog.com",
+        "password": "jonsnow3"
+    },
+    {
+        "name": "Anakin",
+        "email": "anakinskywalker@techblog.com",
+        "password": "anakinskywalker4"
+    }
+
+]
