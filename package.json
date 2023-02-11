@@ -9,5 +9,16 @@
     "handlebars": "^4.7.7",
     "mysql2": "^3.1.2",
     "sequelize": "^6.28.0"
-  }
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "npx nodemon server.js",
+    "seed": "node seeds"
+  },
+  "name": "techblog_db",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

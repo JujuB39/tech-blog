@@ -12,7 +12,7 @@
     {
         "name": "Arya",
         "email": "aryastark@techblog.com",
-        "password": "aryastark1",
+        "password": "aryastark1"
     },
     {
         "name": "Sansa",
@@ -29,5 +29,4 @@
         "email": "anakinskywalker@techblog.com",
         "password": "anakinskywalker4"
     }
-
 ]
