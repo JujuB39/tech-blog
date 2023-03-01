@@ -1,8 +1,20 @@
+ <h1 class="post-title"> Make A Post</h1>
+ <form id="postForm">
   <div class="form-group">
     <label for="postarea1">Write you Post Here</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <div class="mb-3">
+      <label for="name" class="form-label">Title</label>
+      <input type="text" id="titleInput" class="form-control" name="title">
+    </div>
+    <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
     <div class="form-post">
-        <button class="btn btn-primary" type="submit">Create</button>
+        <button class="btn btn-primary" id="create" type="submit">Create</button>
       </div>
   </div>
 </form>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+

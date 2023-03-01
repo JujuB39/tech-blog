@@ -1,3 +1,4 @@
+const path = require('path')
 const express = require('express');
 const session = require ('express-session');
 const { create } = require('express-handlebars')
@@ -12,7 +13,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 const sess = {
-    secret: process.env.SECRET,
+    secret: "tech374hdxnsdj",
     cookie: {},
     resave: false,
     saveUnitialized: true, 

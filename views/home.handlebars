@@ -1,42 +1,53 @@
-<div class="text-center">
-  <h2>{{name}}</h2>
-  <p>{{post}}</p>
-  <p>Created by {{user.name}} on {{format_date date_created}}</p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-{{#if comments.length}}
-                <div>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+<div class="post-list">
+
+{{#if posts.length}}
+    {{#each posts as |post|}}
+    <div class="col-md-6 post-list" id="postList">
+            <div class="row mb-2 postcard" id="posts">
+                <div class="col-md-8">
+                    <p>Posted by: {{post.user.email}}</p>
+                    <h4>Title: {{post.title}}</h4>
+                    <p>Description: {{post.post}}</p>
+                
+        {{#if comments.length}}
+        <div>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                         <p>Comments: {{commentCount}}</p>
-                    </button>
-                    <br>
+            </button>
+            <br>
+        </div>
+            <div class="collapse" id="collapseExample">
+                <div id="commentDrop" class="card card-body">
+                    {{#each comments as |comment|}}
+                    <p id="commentBox">{{comment.user.name}}: {{comment.content}}</p>
+                    {{/each}}
                 </div>
-                <div class="collapse" id="collapseExample">
-                    <div id="commentDrop" class="card card-body">
-                        {{#each comments as |comment|}}
-                        <p id="commentBox">{{comment.user.name}}: {{comment.content}}</p>
-                        {{/each}}
-                    </div>
-                </div>
-                <br>
-                {{/if}}
+            </div>
+            <br>
+        {{/if}}
 
-                <form class="commentForm" data-id="{{post.id}}">
-                    <textarea class="commentInput" rows="3"></textarea>
-                    <br>
-                    <button class="commentBtn btn btn-primary">Leave a Comment</button>
-                </form>
-                {{#if belongsToUser}}
+        <form class="commentForm" data-id="{{post.id}}">
+            <textarea class="commentInput" rows="3"></textarea>
+            <br>
+            <button class="commentBtn btn btn-primary">Leave a Comment</button>
+        </form>
+        {{#if belongsToUser}}
 
-                <button class="btn btn-sm btn-danger" data-id="{{post.id}}">Delete Your Post</button>
-                <button class="btn btn-sm btn-danger" data-id="{{post.id}}">Update Your Post</button>
+            <button class="btn btn-sm btn-danger" data-id="{{post.id}}">Delete Your Post</button>
+            <button class="btn btn-sm btn-danger" data-id="{{post.id}}">Update Your Post</button>
 
-                {{/if}}
+        {{/if}}
+    </div>
+</div>
     {{/each}}
     <br>
-    {{/if}}
+{{/if}}
 </div>
-
 <script>
     $(document).on('click', function () {
         $('.collapse').collapse('hide');
